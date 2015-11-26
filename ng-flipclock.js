@@ -48,7 +48,7 @@ angular.module('ng-flipclock', []).directive('flipClock', ['$parse', function ($
             toDateSeconds = Math.floor((toDate - currentDate) / 1000);
 
             scope.clock = element.FlipClock({
-                autoStart: scope.parse(scope.autoStart),
+                autoStart: false,
                 clockFace: scope.parse(scope.clockFace),
                 defaultClockFace: scope.parse(scope.defaultClockFace),
                 defaultLanguage: scope.parse(scope.defaultLanguage),
