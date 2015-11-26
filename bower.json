@@ -1,28 +1,29 @@
 {
-  "name": "ng-flipclock",
-  "authors": [
-    "Dolan Miu <dolan_miu@hotmail.com>"
-  ],
-  "description": "Sophisticated wrapper for the popular FlipClock jQuery plugin with extra functionality. Designed with Angular in mind",
-  "main": "ng-flipclock.js",
-  "moduleType": [],
-  "keywords": [
+    "name": "ng-flipclock",
+    "version": "0.0.1",
+    "authors": [
+        "Dolan Miu <dolan_miu@hotmail.com>"
+    ],
+    "description": "Sophisticated wrapper for the popular FlipClock jQuery plugin with extra functionality. Designed with Angular in mind",
+    "main": "ng-flipclock.js",
+    "moduleType": [],
+    "keywords": [
     "flip",
     "clock",
     "angular",
     "ng",
     "flipclock"
   ],
-  "license": "MIT",
-  "homepage": "http://www.dolan.bio",
-  "ignore": [
+    "license": "MIT",
+    "homepage": "http://www.dolan.bio",
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-  "dependencies": {
-    "flipclock": "FlipClock#~0.7.7"
-  }
+    "dependencies": {
+        "flipclock": "FlipClock#~0.7.7"
+    }
 }
