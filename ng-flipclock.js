@@ -46,6 +46,9 @@ angular.module('ng-flipclock', []).directive('flipClock', ['$parse', function ($
                 toDate = new Date(scope.countdownTo);
             }
             toDateSeconds = Math.floor((toDate - currentDate) / 1000);
+            if (toDateSeconds <= 0) {
+                toDateSeconds = 0;
+            }
 
             scope.clock = element.FlipClock({
                 autoStart: false,
@@ -69,7 +72,9 @@ angular.module('ng-flipclock', []).directive('flipClock', ['$parse', function ($
                 scope.clock.setCountdown(true);
             }
             if (scope.autoStart === undefined || scope.autoStart === true) {
-                scope.clock.start();
+                if (toDateSeconds !== 0) {
+                    scope.clock.start();
+                }
             }
         }
     };
